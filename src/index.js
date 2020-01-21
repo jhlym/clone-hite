@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './assets/css/style.css';
-import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css';
 import * as serviceWorker from './serviceWorker';
 // react router
 import { BrowserRouter } from 'react-router-dom';
@@ -16,10 +16,7 @@ import rootReducer, { rootSaga } from './redux/modules';
 import { HelmetProvider } from 'react-helmet-async';
 
 const sagaMiddleware = createSagaMiddleware();
-const store = createStore(
-  rootReducer,
-  composeWithDevTools(applyMiddleware(sagaMiddleware)),
-);
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(sagaMiddleware)));
 // parameter에 root saga function
 sagaMiddleware.run(rootSaga);
 
