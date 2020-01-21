@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 
 import logImg from '../assets/img/logo.png';
 import LogoHeader from '../components/Header/LogoHeader';
+import MenuHeader from '../components/Header/MenuHeader';
 
 const Logo = () => {
   return <img src={logImg} alt="logo" width="93" height="25" />;
@@ -20,6 +21,7 @@ const DefaultLayout = () => {
     <Wrapper>
       {/* Header */}
       <LogoHeader logo={Logo} />
+      <MenuHeader />
       {/* Sidebar */}
       <Switch>
         <Route exact path="/" component={Home} />
