@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>title</title>
+        <title>HiteJinro</title>
       </Helmet>
       <Suspense fallback={<CenterLoading />}>
         <Switch>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container, Grid } from 'semantic-ui-react';
 
 const Wrapper = styled.div`
-  min-height: 100px;
+  /* min-height: 100px; */
   position: relative;
 `;
 
@@ -21,7 +21,6 @@ const MenuList = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
   & a {
     display: flex;
     height: inherit;
@@ -30,6 +29,7 @@ const MenuList = styled.li`
     color: #000;
     font-weight: 600;
     width: inherit;
+    height: 100px;
     padding: 0 2rem;
 
     &:hover span:after {
@@ -54,7 +54,7 @@ const MenuList = styled.li`
     width: 100%;
     height: 3px;
     background: #fff;
-    transition: background 0.2s ease;
+    transition: 'background' 0.2s ease;
   }
 `;
 
@@ -68,7 +68,7 @@ const SubWrapper = styled.div`
   z-index: 10;
   background-color: #1253fa;
   opacity: 0.9;
-  top: 100px;
+  top: 98px;
   transition: all 0.4s ease;
   display: flex;
 `;
@@ -80,23 +80,26 @@ const MenuHeader = ({ menus }) => {
         <Navbar>
           <MenuList>
             <a href="#">
-              <span>Menu</span>
+              <span>Company</span>
               <SubWrapper className="sub"></SubWrapper>
             </a>
           </MenuList>
           <MenuList>
             <a href="#">
-              <span>Menu</span>
+              <span>SOCIAL &amp; Media</span>
+              <SubWrapper className="sub"></SubWrapper>
             </a>
           </MenuList>
           <MenuList>
             <a href="#">
-              <span>Menu</span>
+              <span>CSR &amp; JOY</span>
+              <SubWrapper className="sub"></SubWrapper>
             </a>
           </MenuList>
           <MenuList>
             <a href="#">
-              <span>Menu</span>
+              <span>CUSTOMER CENTER</span>
+              <SubWrapper className="sub"></SubWrapper>
             </a>
           </MenuList>
           {menus.map(menu => (
