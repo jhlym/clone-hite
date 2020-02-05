@@ -22,7 +22,7 @@ sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename="/Franchise">
+    <BrowserRouter basename="/clone-hite">
       <HelmetProvider>
         <App />
       </HelmetProvider>
